@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FaultyWeb</title>
+    <script>
+    function toggleDarkMode() {
+      const body = document.querySelector('body');
+      body.classList.toggle('dark-mode');
+    }
+  </script>
+  <style>
+    body {
+      font-family: Comic Sans MS, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #202124;
+      color: white;
+    }
+    
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .content {
+      margin-top: 20px;
+    }
+    
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+.buttonp1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.buttonp1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+    .dark-mode-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+    .dark-mode-switch input[type="checkbox"] {
+      display: none;
+    }
+
+    .dark-mode-switch label {
+      display: block;
+      width: 60px;
+      height: 34px;
+      background-color: gray;
+      border-radius: 17px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .dark-mode-switch label::after {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background-color: white;
+      top: 4px;
+      left: 4px;
+      transition: transform 0.2s ease-in;
+    }
+
+    .dark-mode-switch input[type="checkbox"]:checked + label {
+      background-color: #4CAF50;
+    }
+
+    .dark-mode-switch input[type="checkbox"]:checked + label::after {
+      transform: translateX(26px);
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Welcome to FaultyWeb!</h1>
+    <p>Yes, this website isn't complete yet, but who cares?</p>
+  </div>
+  
+  <div class="container">
+    <div class="content">
+      <h2>Projects</h2>
+      <button class="buttonp1" onclick = "window.location.href='https://drive.google.com/file/d/1UAS13vcECaH7XKx6Q5dgvKybJlyZXjxO/view?usp=sharing';">CMD Tools</button>
+      
+      <h2>My Skills</h2>
+      <ul>
+        <li>HTML (little, but also a lot)</li>
+        <li>CSS (Super little)</li>
+        <li>JavaScript (super ultra little)</li>
+        <li>...</li>
+      </ul>
+      
+      <h2>Contact Me</h2>
+      <p>You can reach me via email at discordmeow28@gmail.com or follow me on Twitter <a href="https://twitter.com/faultywindows">(@faultywindows)</a>.<br><a href=feedback.html>Want to give feedback?</a></p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>&copy; 2023 Faulty Windows. All rights reserved.</p>
+  </div>
+    <div class="dark-mode-switch">
+    <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()">
+    <label for="dark-mode-toggle"></label>
+  </div>
+</body>
+</html>
