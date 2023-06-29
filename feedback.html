@@ -44,20 +44,22 @@
 </head>
 <body>
   <div class="header">
-    <h1>Send</h1>
+    <h1>Send Feedback</h1>
   </div>
   
   <div class="container">
     <div class="content">
-  <form action="feedbackcheck.html" method="post">
-    <label for="Feedback">Feedback:</label>
-    <input type="text" id="Feedback" name="Feedback" required>
+  <form action="save_feedback.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
     
-    <label for="Name">Name:</label>
-    <input type="text" id="Name" name="Name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="feedback">Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
     
     <input type="submit" value="Submit">
-  </form>
     </div>
   </div>
   
